@@ -7,7 +7,7 @@ import sys
 x = np.arange(0, 10)
 y = np.arange(0, 10)
 X, Y = np.meshgrid(x, y)
-Z = np.sin(X-1) + 0.0*np.cos(Y-1)
+Z = np.sin(X-1) + np.cos(Y-1)
 #
 Z2 = nd.laplace(Z, output=None, mode='wrap')
 Z2[0,]=Z2[1,]
